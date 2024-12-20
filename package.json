@@ -1,9 +1,12 @@
 {
   "name": "sisal",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "private": true,
   "description": "An 11ty plugin that integrates Ligature and Wander.",
-  "main": "index.js",
+  "main": "sisal.js",
+  "type": "module",
   "scripts": {
+    "sisal": "node sisal-gen.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,9 +15,10 @@
     "ligature",
     "wander"
   ],
-  "author": "",
+  "author": "https://almibe.dev",
   "license": "MPL-2.0",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@ligature/ligature": "^0.14.0"
   }
 }
