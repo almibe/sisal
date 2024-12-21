@@ -8,7 +8,7 @@ export default async function (eleventyConfig) {
     eleventyConfig.addPlugin(SisalPlugin)
     return {
       dir: {
-        // input: "src",
+        input: "src",
         output: "_site"
       },
       templateFormats: ['md', '11ty.js', 'liquid'],
