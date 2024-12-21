@@ -19,6 +19,7 @@
   "license": "MPL-2.0",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@ligature/ligature": "^0.14.0"
+    "@ligature/ligature": "link:..\\ligature-fs\\src\\LigatureFable\\package",
+    "markdown-it": "^14.1.0"
   }
 }
