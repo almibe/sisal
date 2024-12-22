@@ -47,7 +47,7 @@ function createUiComponent(buffer) {
         if (args.length == 1) {
           buffer.push(md.render(args[0].value))
         } else {
-          throw "Illegal call to write."
+          throw "Illegal call to md."
         }
       }
     }
@@ -70,8 +70,8 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
       return str
     }
   })
-  eleventyConfig.addTemplateFormats("wandert")
-  eleventyConfig.addExtension("wandert", {
+  eleventyConfig.addTemplateFormats("wander.template")
+  eleventyConfig.addExtension("wander.template", {
     compile: async (inputContent) => {
       return async () => {
         var buffer = [];
