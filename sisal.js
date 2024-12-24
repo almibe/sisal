@@ -18,7 +18,7 @@ function printValue(value) {
   } else if (value.type == 'network') {
       return printNetwork(value.value)
   } else if (value.type == 'quote') {
-      throw "TODO"
+      throw "???"
   } else if (value.type == 'variable') {
       return value.value
   } else {
@@ -66,7 +66,7 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
   eleventyConfig.addMarkdownHighlighter((str, lang) => {
     if (lang != undefined && lang === "wander") {
       let result = run(str, [])
-      return str + "\n<hr>\nResult:\n" + he.encode(printValue(result))
+      return "<span class='code'>" + he.encode(str) + "</span>\n<hr>\nResult:\n" + he.encode(printValue(result))
     } else {
       return str
     }
