@@ -19,7 +19,8 @@
   "license": "MPL-2.0",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@ligature/ligature": "^0.15.0",
+    "@ligature/ligature": "^0.16.0",
+    "he": "^1.2.0",
     "markdown-it": "^14.1.0"
   }
 }

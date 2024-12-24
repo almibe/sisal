@@ -12,8 +12,11 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       '@ligature/ligature':
-        specifier: ^0.15.0
-        version: 0.15.0
+        specifier: ^0.16.0
+        version: 0.16.0
+      he:
+        specifier: ^1.2.0
+        version: 1.2.0
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -59,8 +62,8 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@ligature/ligature@0.15.0':
-    resolution: {integrity: sha512-JayqxWZmPzmB7gqFwp/jfCHEQqbI3D6GLtejsSH4gYkSo05q/pveU0F5iPPju6xIX/N4Tzp6Ci27HeHrar64KQ==}
+  '@ligature/ligature@0.16.0':
+    resolution: {integrity: sha512-OaekiCyyH5ZxTDeTA3ZzoEmM7Cwr6C3DliGgLgmAp1u+7bBQ4BUBhmEbAm1QhuzNm7EFGkXzk7TKtk3xQ+FByA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -406,6 +409,10 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
+
+  he@1.2.0:
+    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
+    hasBin: true
 
   htmlparser2@7.2.0:
     resolution: {integrity: sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog==}
@@ -914,7 +921,7 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@ligature/ligature@0.15.0':
+  '@ligature/ligature@0.16.0':
     dependencies:
       immutable: 5.0.3
 
@@ -1238,6 +1245,8 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+
+  he@1.2.0: {}
 
   htmlparser2@7.2.0:
     dependencies:

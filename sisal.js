@@ -1,5 +1,6 @@
 import markdownit from 'markdown-it'
 import { run } from "@ligature/ligature";
+import he from "he";
 
 function printNetwork(n) {
   let res = "{\n"
@@ -64,8 +65,8 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
   });
   eleventyConfig.addMarkdownHighlighter((str, lang) => {
     if (lang != undefined && lang === "wander") {
-      let result = run(str)
-      return str + "\n<hr>\nResult:\n" + result //TODO encode string for html
+      let result = run(str, [])
+      return str + "\n<hr>\nResult:\n" + he.encode(printValue(result))
     } else {
       return str
     }

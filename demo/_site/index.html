@@ -5,41 +5,46 @@
   <title>Demo</title>
 </head>
 <body>
-    <h1>Commands</h1><h2>Bool.not</h2>
+    <h1>Commands</h1><h2>bool.Bool.not</h2>
     
-        <p>Boolean not</p><h2>assert-fail</h2>
+        <p>Boolean not</p><h2>assert.assert-fail</h2>
     
-        <p>Check that a call results in an error.</p><h2>assert-equal</h2>
+        <p>Check that a call results in an error.</p><h2>assert.assert-equal</h2>
     
-        <p>Check that two values are equal.</p><h2>result-set</h2>
+        <p>Check that two values are equal.</p><h2>core.result-set</h2>
     
-        <p>Construct a result set value.</p><h2>count</h2>
+        <p>Construct a result set value.</p><h2>network.count</h2>
     
-        <p>Count the number of assertions in a Network.</p><h2>docs</h2>
+        <p>Count the number of assertions in a Network.</p><h2>core.docs</h2>
     
-        <p>Create a network that contains documentation for the available commands.</p><h2>eval</h2>
+        <p>Create a network that contains documentation for the available commands.</p><h2>core.eval</h2>
     
-        <p>Eval a quote.</p><h2>apply</h2>
+        <p>Eval a quote.</p><h2>network.apply</h2>
     
-        <p>Fill in Variables in a Network with values from a Result Set.</p><h2>union</h2>
+        <p>Fill in Variables in a Network with values from a Result Set.</p><h2>network.union</h2>
     
-        <p>Find the union of two Networks.</p><h2>ignore</h2>
+        <p>Find the union of two Networks.</p><h2>core.ignore</h2>
     
-        <p>Ignore any arguments passed and return working state unchanged.</p><h2>infer</h2>
+        <p>Ignore any arguments passed and return working state unchanged.</p><h2>tinydl.infer</h2>
     
-        <p>Infer all supported tiny-dl relations.</p><h2>match</h2>
+        <p>Infer all supported tiny-dl relations.</p><h2>network.match</h2>
     
-        <p>Match a pattern against a network.</p><h2>chomp</h2>
+        <p>Match a pattern against a network.</p><h2>io.open-local-library</h2>
     
-        <p>Merge the passed Network into named Network.</p><h2>read</h2>
+        <p>Open a local dependency that is in the $WANDER_LIBS directory.</p><h2>io.open-local-dependency</h2>
     
-        <p>Read the value of a given variable.</p><h2>minus</h2>
+        <p>Open a local dependency.</p><h2>core.fold</h2>
     
-        <p>Remove all Statements from the first Network that are in the second Networks.</p><h2>id</h2>
+        <p>Perform a fold on a ResultSet.
+fold -> quote -> initialNetwork -> resultSet</p><h2>core.read</h2>
     
-        <p>Return the value passed.</p><h2>filter</h2>
+        <p>Read the value of a given variable.</p><h2>network.minus</h2>
     
-        <p>arguments: pattern data, returns network</p><h2>query</h2>
+        <p>Remove all Statements from the first Network that are in the second Networks.</p><h2>core.id</h2>
+    
+        <p>Return the value passed.</p><h2>network.filter</h2>
+    
+        <p>arguments: pattern data, returns network</p><h2>network.query</h2>
     
         <p>arguments: pattern template data, returns network</p></body>
 </html>
