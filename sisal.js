@@ -68,7 +68,7 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
       let result = run(str, [])
       return "<span class='code'>" + he.encode(str) + "</span>\n<hr>\nResult:\n" + he.encode(printValue(result))
     } else {
-      return str
+      return he.encode(str)
     }
   })
   eleventyConfig.addTemplateFormats("wander.template")
