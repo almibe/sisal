@@ -1,0 +1,4 @@
+{ index.md : 11ty.virtual-template,
+  index.md content "hello",
+  index.md layout main.html, }
+*sisal merge
