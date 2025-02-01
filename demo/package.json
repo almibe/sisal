@@ -5,7 +5,6 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "sisal": "sisal",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -33,14 +33,17 @@ let elev = new Eleventy(process.cwd(), process.cwd() + path.sep + "_site", {
 					config.set(triple[0].value, {"content": triple[2].value})
 				}
 			} else if (triple[1].value == "layout") {
-			if (config.has(triple[0].value)) {
-				let entryConfig = config.get(triple[0].value)
-				entryConfig.layout = triple[2].value
-				config.set(triple[0].value, entryConfig)
-			} else {
-				config.set(triple[0].value, {"layout": triple[2].value})
+				if (config.has(triple[0].value)) {
+					let entryConfig = config.get(triple[0].value)
+					entryConfig.layout = triple[2].value
+					config.set(triple[0].value, entryConfig)
+				} else {
+					config.set(triple[0].value, {"layout": triple[2].value})
+				}
+			} else if (triple[1].value == "data") {
+				
+				throw "TODO"
 			}
-		}
 
 		}
 		for (let [k, v] of config) {

@@ -22,8 +22,8 @@
   "license": "MPL-2.0",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@ligature/ligature": "link:..\\ligature-components\\packages\\ligature",
-    "@ligature/ligature-components": "link:..\\ligature-components\\packages\\ligature-components",
+    "@ligature/ligature": "^0.19.0",
+    "@ligature/ligature-components": "^0.16.0",
     "command-line-args": "^6.0.1",
     "he": "^1.2.0",
     "markdown-it": "^14.1.0"
