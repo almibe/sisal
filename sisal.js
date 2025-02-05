@@ -1,5 +1,5 @@
 import markdownit from 'markdown-it'
-import { run, topOfStack } from "@ligature/ligature";
+import { run, topOfStack, printResult } from "@ligature/ligature";
 import he from "he";
 
 export default function sisalPlugin(eleventyConfig, pluginOptions) {
@@ -11,7 +11,7 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
   eleventyConfig.addMarkdownHighlighter((str, lang) => {
     if (lang != undefined && lang === "wander") {
       let result = run(str)
-      return "<span class='code'>" + he.encode(str) + "</span>\n<hr>\nResult:\n" + he.encode(printValue(result))
+      return "<span class='code'>" + he.encode(str) + "</span>\n<hr>\nResult:\n" + he.encode(printResult(result))
     } else {
       return he.encode(str)
     }

@@ -1,1 +1,1 @@
-"bob" to-json
+{person1 : Person, person1 name "Bob"} [Person] instances-json
