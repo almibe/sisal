@@ -1,12 +1,11 @@
 import markdownit from 'markdown-it'
-import { run, topOfStack, printResult } from "@ligature/ligature";
+import { run, resultToJs } from "@ligature/ligature";
 import he from "he";
 
 export default function sisalPlugin(eleventyConfig, pluginOptions) {
 	eleventyConfig.addDataExtension("wander", (contents) => {
     let res = run(contents)
-    let value = topOfStack(res)
-    return JSON.parse(value.value)
+    return resultToJs(res)
   });
   eleventyConfig.addMarkdownHighlighter((str, lang) => {
     if (lang != undefined && lang === "wander") {

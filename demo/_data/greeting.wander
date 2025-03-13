@@ -1,1 +1,1 @@
-{person1 : Person, person1 name "Bob"} [Person] instances-json
+instances [Person] (network [person1 : Person] [person1 name "Bob"])

@@ -12,8 +12,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       '@ligature/ligature':
-        specifier: link:..\ligature-components\packages\ligature
-        version: link:../ligature-components/packages/ligature
+        specifier: link:..\ligature-components\packages\ligature-fable
+        version: link:../ligature-components/packages/ligature-fable
       '@ligature/ligature-components':
         specifier: link:..\ligature-components\packages\ligature-components
         version: link:../ligature-components/packages/ligature-components
