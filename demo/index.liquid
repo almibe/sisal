@@ -4,9 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Demo</title>
-        <script type="module" src="/assets/test.js"></script>
+        <script type="module" src="/assets/main.js"></script>
     </head>
     <body>
         Hello {{greeting.value}}!
+
+        {% renderTemplate "wander" %}
+        (assertions [a b c])
+        {% endrenderTemplate %}
     </body>
 </html>

@@ -9,11 +9,10 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
   eleventyConfig.addTemplateFormats("wander");
 
   const engine = new Liquid();
-  const template = engine.parse("<script defer>console.log(\"{{script}}\")</script>");
+  const template = engine.parse("<div class=\"wander\" data-script=\"{{script | escape}}\" ></div>");
 
 	eleventyConfig.addExtension("wander", {
 		compile: async (inputContent) => {
-
 			return async () => {
         return engine.render(template, { script: inputContent })			
       };
@@ -32,8 +31,4 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
       return he.encode(str)
     }
   })
-}
-
-export function sisalInit() {
-  console.log("yay")
 }
