@@ -1,6 +1,6 @@
 {
   "name": "demo",
-  "private":true,
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -11,6 +11,7 @@
   "author": "https://almibe.dev",
   "license": "MPL-2.0",
   "dependencies": {
+    "@11ty/eleventy-plugin-vite": "^6.0.0",
     "sisal": "link:.."
   }
 }

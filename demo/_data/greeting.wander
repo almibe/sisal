@@ -1,1 +1,1 @@
-instances [Person] (network [person1 : Person] [person1 name "Bob"])
+"Bob"

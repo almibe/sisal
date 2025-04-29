@@ -21,10 +21,11 @@
   "license": "MPL-2.0",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@ligature/ligature": "link:..\\ligature-components\\packages\\ligature-fable",
+    "@ligature/ligature": "link:..\\ligature-fs\\src\\LigatureFable",
     "@ligature/ligature-components": "link:..\\ligature-components\\packages\\ligature-components",
     "command-line-args": "^6.0.1",
     "he": "^1.2.0",
+    "liquidjs": "^10.21.0",
     "markdown-it": "^14.1.0"
   }
 }

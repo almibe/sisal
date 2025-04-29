@@ -12,8 +12,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       '@ligature/ligature':
-        specifier: link:..\ligature-components\packages\ligature-fable
-        version: link:../ligature-components/packages/ligature-fable
+        specifier: link:..\ligature-fs\src\LigatureFable
+        version: link:../ligature-fs/src/LigatureFable
       '@ligature/ligature-components':
         specifier: link:..\ligature-components\packages\ligature-components
         version: link:../ligature-components/packages/ligature-components
@@ -23,6 +23,9 @@ importers:
       he:
         specifier: ^1.2.0
         version: 1.2.0
+      liquidjs:
+        specifier: ^10.21.0
+        version: 10.21.0
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -522,8 +525,8 @@ packages:
   linkify-it@5.0.0:
     resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
 
-  liquidjs@10.18.0:
-    resolution: {integrity: sha512-gCJPmpmZ3oi2rMMHo/c+bW1LaRF+ZAKYTWQmKXPp0uK9EkWMFRmgbk3+Io4LSJGAOnpCZSgHJbNzcygx3kfAAQ==}
+  liquidjs@10.21.0:
+    resolution: {integrity: sha512-DouqxNU2jfoZzb1LinVjOc/f6ssitGIxiDJT+kEKyYqPSSSd+WmGOAhtWbVm1/n75svu4aQ+FyQ3ctd3wh1bbw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -900,7 +903,7 @@ snapshots:
       iso-639-1: 3.1.3
       js-yaml: 4.1.0
       kleur: 4.1.5
-      liquidjs: 10.18.0
+      liquidjs: 10.21.0
       luxon: 3.5.0
       markdown-it: 14.1.0
       micromatch: 4.0.8
@@ -1359,7 +1362,7 @@ snapshots:
     dependencies:
       uc.micro: 2.1.0
 
-  liquidjs@10.18.0:
+  liquidjs@10.21.0:
     dependencies:
       commander: 10.0.1
 

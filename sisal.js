@@ -1,9 +1,26 @@
 import markdownit from 'markdown-it'
 import { run, resultToJs } from "@ligature/ligature";
 import he from "he";
+import { Liquid } from "liquidjs"
+
+const isProduction = true
 
 export default function sisalPlugin(eleventyConfig, pluginOptions) {
-	eleventyConfig.addDataExtension("wander", (contents) => {
+  eleventyConfig.addTemplateFormats("wander");
+
+  const engine = new Liquid();
+  const template = engine.parse("<script defer>console.log(\"{{script}}\")</script>");
+
+	eleventyConfig.addExtension("wander", {
+		compile: async (inputContent) => {
+
+			return async () => {
+        return engine.render(template, { script: inputContent })			
+      };
+		},
+	});
+
+  eleventyConfig.addDataExtension("wander", (contents) => {
     let res = run(contents)
     return resultToJs(res)
   });
@@ -15,4 +32,8 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
       return he.encode(str)
     }
   })
+}
+
+export function sisalInit() {
+  console.log("yay")
 }

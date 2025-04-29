@@ -1,16 +1,15 @@
 import { EleventyRenderPlugin } from "@11ty/eleventy"
 import SisalPlugin from 'sisal'
+import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
 
 export default async function (eleventyConfig) {
-    // eleventyConfig.addWatchTarget('./src/');
-    // eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addPlugin(EleventyVitePlugin);
+    eleventyConfig.addPassthroughCopy("./assets/");
     eleventyConfig.addPlugin(EleventyRenderPlugin)
     eleventyConfig.addPlugin(SisalPlugin)
     return {
-      dir: {
-        // input: "src",
-        output: "_site"
-      },
-      templateFormats: ['md', '11ty.js', 'liquid'],
+        dir: {
+            output: "_site"
+        },
     }
 }
