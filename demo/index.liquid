@@ -9,11 +9,11 @@
     <body>
         Hello {{greeting.value}}!
 
-        {% renderTemplate "wander" %}
+        {% renderTemplate "wander-embed" %}
         (is-consistent (definitions) (assertions [betty : Cat] [betty ~ Cat]))
         {% endrenderTemplate %}
 
-        {% renderTemplate "wander" %}
+        {% renderTemplate "wander-embed" %}
         { display draw network (assertions [a b c]) }
         {% endrenderTemplate %}
     </body>
