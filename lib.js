@@ -13,11 +13,11 @@ export function sisalInit() {
       let editor = showEditor(editorElement, script)
       runButton.addEventListener("click", e => {
         newElement.innerHTML = ""
-        runScript(editor.state.doc.toString(), newElement)        
+        runScript(editor.getValue(), newElement)        
       })
       runButton.textContent = "Run"
       el.append(runButton)
-      runScript(script, newElement)
+      runScript(script, "text", newElement)
     })
   }
 
