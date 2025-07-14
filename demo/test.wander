@@ -1,4 +1,4 @@
 ---
 layout: main
 ---
-{p class = "test" "Hello, World!" { em "Hello!" }}
+p { class = "test" "Hello, World!" em { "Hello!" }}

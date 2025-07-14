@@ -1,15 +1,13 @@
 {
   "name": "sisal",
   "version": "0.5.0",
+  "private": true,
   "description": "An 11ty plugin that integrates Ligature and Wander.",
   "main": "sisal.js",
   "type": "module",
   "scripts": {
     "sisal": "node sisal-gen.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "sisal": "./bin.js"
   },
   "keywords": [
     "11ty",
@@ -21,11 +19,10 @@
   "license": "MPL-2.0",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@ligature/ligature": "link:..\\ligature-fs\\src\\LigatureFable",
-    "@ligature/ligature-components": "link:..\\ligature-components\\packages\\ligature-components",
+    "@ligature/ligature": "^0.21.0",
+    "@ligature/ligature-components": "^0.17.0",
     "command-line-args": "^6.0.1",
     "he": "^1.2.0",
-    "liquidjs": "^10.21.0",
-    "markdown-it": "^14.1.0"
+    "liquidjs": "^10.21.0"
   }
 }
