@@ -1,18 +1,10 @@
 import { runAndGenerateHtml } from "@ligature/ligature";
-import he from "he";
-import { Liquid } from "liquidjs"
 
 const isProduction = true
 
 export default function sisalPlugin(eleventyConfig, pluginOptions) {
 
   eleventyConfig.addTemplateFormats("wander");
-
-  const engine = new Liquid({
-    templates: {}
-  });
-
-  const embedTemplate = engine.parse("<div class=\"wander\" data-script=\"{{script | escape}}\" ></div>");
 
 	eleventyConfig.addExtension("wander", {
 		compile: async (inputContent) => {
@@ -24,14 +16,13 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
 		},
 	});
 
-
-	eleventyConfig.addExtension("wander-embed", {
-		compile: async (inputContent) => {
-			return async () => {
-        return engine.render(embedTemplate, { script: inputContent })			
-      };
-		},
-	});
+	// eleventyConfig.addExtension("wander-embed", {
+	// 	compile: async (inputContent) => {
+	// 		return async () => {
+  //       return engine.render(embedTemplate, { script: inputContent })			
+  //     };
+	// 	},
+	// });
 
 
   // eleventyConfig.addDataExtension("wander", (contents) => {
