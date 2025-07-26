@@ -19,8 +19,8 @@
   "license": "MPL-2.0",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@ligature/ligature": "^0.21.0",
-    "@ligature/ligature-components": "^0.17.0",
+    "@ligature/ligature": "link:..\\ligature-fs\\src\\LigatureFable",
+    "@ligature/ligature-components": "link:..\\ligature-components\\packages\\ligature-components",
     "command-line-args": "^6.0.1",
     "he": "^1.2.0",
     "liquidjs": "^10.21.0"

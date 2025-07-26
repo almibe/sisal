@@ -12,11 +12,11 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       '@ligature/ligature':
-        specifier: ^0.21.0
-        version: 0.21.0
+        specifier: link:..\ligature-fs\src\LigatureFable
+        version: link:../ligature-fs/src/LigatureFable
       '@ligature/ligature-components':
-        specifier: ^0.17.0
-        version: 0.17.0
+        specifier: link:..\ligature-components\packages\ligature-components
+        version: link:../ligature-components/packages/ligature-components
       command-line-args:
         specifier: ^6.0.1
         version: 6.0.1
@@ -68,15 +68,6 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@ligature/ligature-components@0.17.0':
-    resolution: {integrity: sha512-f3h0n5rJmg4svGKxNYJUTIh8PT9xLshXE2GNwyOOYVHHae7v341jpiN1tdP55hT/AwitFtJp1xzH1z+5Ma10Ag==}
-
-  '@ligature/ligature@0.20.0':
-    resolution: {integrity: sha512-V0aI0Uy1DwTn2hEFtHNLoIqDSyevJuy+DYjL8HQg7NVm+myQfqxZIwULz0NqlzdC2yHDv/xUTTxaKwVo5sPUpQ==}
-
-  '@ligature/ligature@0.21.0':
-    resolution: {integrity: sha512-DOSdyTcZbviq7+KhiYkQhndveloFeyWcvETfVhCE5wd6CG7WEjznSCmwgtL7X4Lq5CV7yVUbfIMNv9pBcXjYYg==}
-
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -103,9 +94,6 @@ packages:
 
   a-sync-waterfall@1.0.1:
     resolution: {integrity: sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==}
-
-  ace-builds@1.43.1:
-    resolution: {integrity: sha512-n9/n+zBhbbkEJjU0FJ4wWAZBDl5G8WYzg4+uIjSER/U3wSSSSVo52W4sco4Jryg11JAJvorExxMr3GDINqtjdA==}
 
   acorn-walk@8.3.4:
     resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
@@ -531,9 +519,6 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
-  konva@9.3.22:
-    resolution: {integrity: sha512-yQI5d1bmELlD/fowuyfOp9ff+oamg26WOCkyqUyc+nczD/lhRa3EvD2MZOoc4c1293TAubW9n34fSQLgSeEgSw==}
-
   linkify-it@5.0.0:
     resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
 
@@ -797,9 +782,6 @@ packages:
     resolution: {integrity: sha512-uCC2VHvQRYu+lMh4My/sFNmF2klFymLX1wHJeXnbEJERpV/ZsVuonzerjfrGpIGF7LBVa1O7i9kjiWvJiFck8g==}
     engines: {node: '>=0.10.0'}
 
-  tabulator-tables@6.3.1:
-    resolution: {integrity: sha512-qFW7kfadtcaISQIibKAIy0f3eeIXUVi8242Vly1iJfMD79kfEGzfczNuPBN/80hDxHzQJXYbmJ8VipI40hQtfA==}
-
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -968,17 +950,6 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@ligature/ligature-components@0.17.0':
-    dependencies:
-      '@ligature/ligature': 0.20.0
-      ace-builds: 1.43.1
-      konva: 9.3.22
-      tabulator-tables: 6.3.1
-
-  '@ligature/ligature@0.20.0': {}
-
-  '@ligature/ligature@0.21.0': {}
-
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -1004,8 +975,6 @@ snapshots:
       escape-string-regexp: 5.0.0
 
   a-sync-waterfall@1.0.1: {}
-
-  ace-builds@1.43.1: {}
 
   acorn-walk@8.3.4:
     dependencies:
@@ -1386,8 +1355,6 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  konva@9.3.22: {}
-
   linkify-it@5.0.0:
     dependencies:
       uc.micro: 2.1.0
@@ -1626,8 +1593,6 @@ snapshots:
       ansi-regex: 6.1.0
 
   strip-bom-string@1.0.0: {}
-
-  tabulator-tables@6.3.1: {}
 
   to-regex-range@5.0.1:
     dependencies:
