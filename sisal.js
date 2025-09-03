@@ -13,8 +13,8 @@ export default function sisalPlugin(eleventyConfig, pluginOptions) {
 	// 	},
 	// });
 
-  eleventyConfig.addDataExtension("wander", (contents) => {
-    let res = run(contents)
-    return res
-  });
+  // eleventyConfig.addDataExtension("wander", (contents) => {
+  //   let res = run(contents)
+  //   return res
+  // });
 }
